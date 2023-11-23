@@ -7,5 +7,10 @@ pipeline {
                 echo "$GIT_BRANCH"
             }
         }
+        stage('Verify Commit') {
+            steps {
+                echo "$GIT_COMMIT"
+            }
+        }
     }
 }
